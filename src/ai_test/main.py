@@ -73,7 +73,7 @@ triage_agent = Agent(
         InputGuardrail(guardrail_function=homework_guardrail),
     ],
 )
-
+#
 async def main():
     try:
         result = await Runner.run(triage_agent, "who was the first president of the united states?", run_config=config)
